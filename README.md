@@ -1,37 +1,36 @@
-# D'Fades Factory Barbershop — Website
+# Living Room Restaurant & Lounge — Website
 
-Single-page, mobile-first site for **D'Fades Factory Barbershop**, 2009 Stillwell Ave,
-Brooklyn, NY 11223 (Gravesend).
+Premium single-page site for **Living Room Restaurant & Lounge**, 178 Avenue U, Brooklyn,
+NY 11223 (Gravesend). Replaces the previous D'Fades Factory demo in this repo (preserved in
+git history).
 
 ## Design
 
-Palette taken directly from the shop's own emblem (the Instagram logo): warm black ground,
-**antique gold**, ivory type. The emblem's double-rule ornament ("═ CUT · SHAVE · FADE ═")
-recurs as the section-label motif, the about card is a circular badge echoing the logo's ring,
-and menu prices sit on dotted leaders like a printed shop card. Display type is Marcellus
-(engraved-roman feel); body is Archivo. No neon, no glow effects.
+Plush lounge palette: plum-black ground, **copper-rose** accent (drawn from the downstairs
+flower wall), warm ivory type. Cormorant Garamond display with italic accents; Figtree body.
+The site's structure mirrors the venue's own layout — **"Dinner upstairs. Lounge downstairs."**
+— with a two-floor split, a real-priced menu with dotted leaders, a Thu/Fri/Sat nights
+program, an italic serif quote wall, and a private-events panel.
 
-Animations kept quiet: a slow-turning barber-pole mark in emblem colors, short fade-up reveals,
-hover states, live open/closed status in NY time. All respect `prefers-reduced-motion`.
+Stock photography (Unsplash, free license) in the hero, floor cards and events panel — every
+image has an `onerror` fallback to a styled tile so a failed load can never break the page.
 
-## Booking
+## Facts on the page (all researched, sources in RESEARCH.md)
 
-The shop has no booking platform (verified — no Booksy/TheCut/Squire/Fresha), so the site
-offers the three real channels: walk in, Instagram DM, call ahead — plus a **booking-request
-form** that composes the appointment message, copies it to the clipboard, and opens the shop's
-Instagram DM thread ready to paste.
+- Phone reservations (718) 996-8700 — the venue takes no online bookings
+- Real menu prices from public listings (lamb chops $26, filet burger $24, wings $16 …)
+- Hours: Sun–Thu 11–1:45 AM, Fri–Sat 11–3:45 AM, with correct late-night open-status logic
+- DJ Thu–Sat, belly dance Saturdays, ~$20 hookah with Quasar tops
+- Toast first-party online ordering linked (commission-free for the venue)
+- Sister venue strip: Living Room Sushi & Steakhouse, 192 Avenue U
+- Real guest quotes; no invented star ratings (Yelp aggregate is 3.5 — quotes carry the page)
 
-## Files
+## Before launch — venue must confirm
 
-- `index.html` / `styles.css` / `script.js` — no build step; open directly or `python3 -m http.server`
-- `RESEARCH.md` — five-agent research compilation with sources and confidence labels
+1. Hours conflict: directories say 11 AM open; an older listing says 5 PM (lounge schedule?)
+2. Hookah menu and current pricing; bottle/VIP service; dress code
+3. Private-room capacities and packages
+4. Replace stock photos with the venue's own (flower wall, dining room, plated dishes)
+5. Belly-dance night (Saturday per latest info; was Friday)
 
-## Before launch — owner must confirm
-
-1. **Phone number** — not indexed anywhere online; the Call button links to a placeholder `tel:`
-2. **Prices** — no menu is published anywhere; site prices are calibrated to the immediate
-   competitive set (cuts $25–40 nearby) and marked as placeholders in the footer demo note
-3. **Hours** — daily 8 AM–8 PM per the Instagram bio (one listing claims Fri till 9 — unverified)
-4. **Photos** — gallery tiles are typographic placeholders linking to @d_fadesfactory; replace
-   with real cut photos
-5. Barber roster names, if a team section is wanted
+Deploys automatically: push to `main` → GitHub Pages via `.github/workflows/publish.yml`.
