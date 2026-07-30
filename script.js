@@ -1,4 +1,4 @@
-/* D'Fades Factory — interactions */
+/* Living Room Restaurant & Lounge — interactions */
 (function () {
   "use strict";
 
@@ -52,50 +52,32 @@
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
 
-  /* ----- Open/closed status (daily 8:00–20:00, NY time) ----- */
+  /* ----- Open/closed status -----
+     Hours: Sun–Thu 11:00 AM – 1:45 AM (next day); Fri–Sat 11:00 AM – 3:45 AM.
+     Late-night carryover: closing time depends on the PREVIOUS day's schedule. */
   var statusEl = document.querySelector("[data-open-status]");
   var statusWrap = document.querySelector(".hero-status");
   try {
     var nyNow = new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
+    var day = nyNow.getDay();            // 0 Sun … 6 Sat
     var mins = nyNow.getHours() * 60 + nyNow.getMinutes();
-    var open = mins >= 480 && mins < 1200; // 8:00–20:00
-    if (statusEl) {
-      statusEl.textContent = open
-        ? "Open now — until 8 PM today"
-        : "Closed now — opens 8 AM, every day";
+    var prevDay = (day + 6) % 7;
+    var lateClose = (prevDay === 5 || prevDay === 6) ? 225 : 105; // 3:45 vs 1:45
+    var open = false, label = "";
+
+    if (mins < lateClose) {
+      open = true;
+      label = "Open now — until " + (lateClose === 225 ? "3:45 AM" : "1:45 AM");
+    } else if (mins >= 660) {
+      open = true;
+      var tonight = (day === 5 || day === 6) ? "3:45 AM" : "1:45 AM";
+      label = "Open now — until " + tonight + " tonight";
+    } else {
+      label = "Opens 11 AM · open late every night";
     }
+    if (statusEl) statusEl.textContent = label;
     if (statusWrap && !open) statusWrap.classList.add("closed");
   } catch (e) { /* keep static fallback text */ }
-
-  /* ----- Booking form → prefilled Instagram DM ----- */
-  var form = document.getElementById("book-form");
-  var formStatus = document.querySelector("[data-form-status]");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var data = new FormData(form);
-      var msg = "Hi! I'd like to book a " + data.get("service") +
-                " for " + data.get("day") + " around " + data.get("time") +
-                ". — " + data.get("name");
-
-      function openDM() {
-        window.open("https://ig.me/m/d_fadesfactory", "_blank", "noopener");
-      }
-
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(msg).then(function () {
-          if (formStatus) formStatus.textContent = "Message copied — paste it in the DM that just opened.";
-          openDM();
-        }, function () {
-          if (formStatus) formStatus.textContent = "Send this in the DM: “" + msg + "”";
-          openDM();
-        });
-      } else {
-        if (formStatus) formStatus.textContent = "Send this in the DM: “" + msg + "”";
-        openDM();
-      }
-    });
-  }
 
   /* ----- Mobile action bar appears after the hero ----- */
   var actionBar = document.querySelector(".action-bar");
