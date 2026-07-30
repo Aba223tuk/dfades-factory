@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#0e0d0b">
-  <title>D'Fades Factory Barbershop — Gravesend, Brooklyn | Fades, Kids Cuts, Beard Work</title>
-  <meta name="description" content="D'Fades Factory Barbershop at 2009 Stillwell Ave, Brooklyn. Clean fades, kids cuts, beard sculpting. Walk-ins welcome, open every day 8 AM–8 PM. 5.0 stars on Google.">
+  <title>D'Fades Factory Barbershop — Gravesend, Brooklyn</title>
+  <meta name="description" content="D'Fades Factory Barbershop at 2009 Stillwell Ave, Brooklyn. Fades, beard work and kids' cuts. Walk-ins welcome, every day 8 AM–8 PM. Rated 5.0 on Google.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230e0d0b'/%3E%3Cpath d='M22 14h4v36h-4zM38 14h4v36h-4z' fill='%23c89a4b'/%3E%3Cpath d='M26 20l12 8M26 32l12 8' stroke='%23ede7db' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230e0d0b'/%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%23c89a4b' stroke-width='2'/%3E%3Cpath d='M20 44L41 20M23 20l21 24' stroke='%23c89a4b' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='19' cy='47' r='4' fill='none' stroke='%23c89a4b' stroke-width='2.5'/%3E%3Ccircle cx='45' cy='47' r='4' fill='none' stroke='%23c89a4b' stroke-width='2.5'/%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -18,8 +18,13 @@
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="D'Fades Factory home">
-        <span class="pole" aria-hidden="true"></span>
-        <span class="brand-text">D'FADES <em>FACTORY</em></span>
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M20 44L41 20M23 20l21 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <circle cx="19" cy="47" r="4.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <circle cx="45" cy="47" r="4.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        </svg>
+        <span class="brand-text">D'Fades Factory</span>
       </a>
       <ul class="nav-links">
         <li><a href="#services">Prices</a></li>
@@ -28,12 +33,12 @@
         <li><a href="#book">Book</a></li>
         <li><a href="#visit">Visit</a></li>
       </ul>
-      <a class="btn btn-led btn-sm nav-book" href="#book">Book a chair</a>
+      <a class="btn btn-gold btn-sm nav-book" href="#book">Book a chair</a>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
         <span></span><span></span>
       </button>
     </nav>
-    <div class="led-strip" aria-hidden="true"></div>
+    <div class="nav-rule" aria-hidden="true"></div>
   </header>
 
   <!-- ======= Mobile drawer ======= -->
@@ -47,33 +52,37 @@
       <a href="#visit">Visit us</a>
     </nav>
     <div class="drawer-actions">
-      <a class="btn btn-led" href="#book">Book a chair</a>
+      <a class="btn btn-gold" href="#book">Book a chair</a>
       <a class="btn btn-line" href="https://maps.app.goo.gl/zL4citWKvrFbtw2Y9" target="_blank" rel="noopener">Get directions</a>
     </div>
-    <p class="drawer-note">2009 Stillwell Ave, Gravesend · Every day 8 AM – 8 PM</p>
+    <p class="drawer-note">2009 Stillwell Ave, Gravesend · Every day 8–8</p>
   </aside>
 
   <!-- ======= Hero ======= -->
   <section class="hero">
-    <div class="container">
+    <div class="hero-media" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&amp;fit=crop&amp;w=1800&amp;q=75"
+           alt="" loading="eager" fetchpriority="high"
+           onerror="this.parentElement.classList.add('noimg')">
+    </div>
+    <div class="container hero-inner">
       <p class="hero-status reveal"><span class="dot" aria-hidden="true"></span> <span data-open-status>Open every day · 8 AM – 8 PM</span></p>
       <h1 class="hero-title">
-        <span class="reveal d1">CLEAN&nbsp;FADES.</span>
-        <span class="reveal d2 led-text">FAMILY&nbsp;VIBES.</span>
+        <span class="reveal d1">Clean fades.</span>
+        <span class="reveal d2 gold">Family vibes.</span>
       </h1>
-      <p class="hero-sub reveal d3">Gravesend's barbershop for every kind of fade, sharp beard work and patient kids' cuts. Walk in seven days a week — or grab a chair ahead of time.</p>
+      <p class="hero-sub reveal d3">Every fade, sharp beard work, patient kids' cuts. Walk in seven days a week — 8 to 8 on Stillwell Ave.</p>
       <div class="hero-cta reveal d4">
-        <a class="btn btn-led btn-lg" href="#book">Book a chair</a>
+        <a class="btn btn-gold btn-lg" href="#book">Book a chair</a>
         <a class="btn btn-line btn-lg" href="#services">See prices</a>
       </div>
       <div class="hero-proof reveal d5">
         <span class="stars" aria-hidden="true">★★★★★</span>
-        <span><strong>5.0</strong> on Google · 19 reviews</span>
+        <span><strong>5.0</strong> on Google</span>
         <span class="sep" aria-hidden="true">·</span>
         <span>Walk-ins welcome</span>
       </div>
     </div>
-    <div class="hero-glow" aria-hidden="true"></div>
   </section>
 
   <!-- ======= Services / prices ======= -->
@@ -82,36 +91,35 @@
       <div class="section-head reveal">
         <p class="eyebrow">The menu</p>
         <h2>Cuts &amp; prices</h2>
-        <p class="section-sub">Straightforward pricing, no surprises at the register.</p>
       </div>
 
       <ul class="menu">
         <li class="menu-item reveal">
-          <div><h3>Haircut / Skin Fade</h3><p>Any fade — low, mid, high, skin, taper — finished with a crisp lineup.</p></div>
+          <div><h3>Haircut / Skin Fade</h3><p>Low, mid, high or skin — finished with a crisp lineup.</p></div>
           <span class="price">$30</span>
         </li>
         <li class="menu-item reveal">
-          <div><h3>Haircut + Beard</h3><p>Full cut plus beard sculpt and razor edges. The complete reset.</p></div>
+          <div><h3>Haircut + Beard</h3><p>The full reset: cut, beard sculpt, razor edges.</p></div>
           <span class="price">$40</span>
         </li>
         <li class="menu-item reveal">
-          <div><h3>Kids Cut <small>(12 &amp; under)</small></h3><p>Patient chairs for first cuts and fidgety kids. Discounted, always.</p></div>
+          <div><h3>Kids Cut <small>12 &amp; under</small></h3><p>Patient chairs for first cuts and fidgety kids.</p></div>
           <span class="price">$20</span>
         </li>
         <li class="menu-item reveal">
-          <div><h3>Beard Trim &amp; Lineup</h3><p>Shape, fade the cheeks, razor-sharp edges, hot towel finish.</p></div>
+          <div><h3>Beard Trim &amp; Lineup</h3><p>Shape, faded cheeks, sharp edges, hot towel.</p></div>
           <span class="price">$20</span>
         </li>
         <li class="menu-item reveal">
-          <div><h3>Hot Towel Shave</h3><p>Old-school straight-razor shave with hot towels and balm.</p></div>
+          <div><h3>Hot Towel Shave</h3><p>Straight-razor shave, hot towels, balm.</p></div>
           <span class="price">$25</span>
         </li>
         <li class="menu-item reveal">
-          <div><h3>Lineup / Edge-Up</h3><p>Quick refresh between cuts — hairline, temples, neck.</p></div>
+          <div><h3>Lineup / Edge-Up</h3><p>Hairline, temples and neck between cuts.</p></div>
           <span class="price">$15</span>
         </li>
       </ul>
-      <p class="menu-note reveal">Designs, parts and eyebrows on request — ask your barber. <span class="muted">Prices set by the shop and may change.</span></p>
+      <p class="menu-note reveal muted">Designs, parts and eyebrows on request. Prices set by the shop.</p>
     </div>
   </section>
 
@@ -121,22 +129,43 @@
       <div class="about-grid">
         <div class="about-copy reveal">
           <p class="eyebrow">The shop</p>
-          <h2>A factory for fades in Brooklyn's oldest neighborhood</h2>
-          <p>D'Fades Factory opened on Stillwell Ave in 2023 and earned a perfect five stars doing one thing: treating every head like it matters. It's a full crew of barbers — Dominican craft, every texture, classic to modern — with music on, kids welcome, and no attitude at the door.</p>
+          <h2>Barbering in Brooklyn's oldest neighborhood</h2>
+          <p>D'Fades Factory opened on Stillwell Ave in 2023 and holds a perfect five stars. A full crew of barbers, every texture, classic to modern — music on, kids welcome.</p>
           <p>Gravesend has been here since 1643. The fades are newer.</p>
           <ul class="about-facts">
-            <li><span class="num" data-count="7">7</span><span>days a week</span></li>
+            <li><span class="num">7</span><span>days a week</span></li>
             <li><span class="num">8–8</span><span>every day</span></li>
-            <li><span class="num" data-count="5">5.0</span><span>Google rating</span></li>
+            <li><span class="num">5.0</span><span>Google rating</span></li>
           </ul>
         </div>
         <div class="about-visual reveal" aria-hidden="true">
-          <div class="chair-card">
-            <div class="chair-led"></div>
-            <p class="chair-line">EST. 2023</p>
-            <p class="chair-big">STILLWELL<br>AVE</p>
-            <p class="chair-line">GRAVESEND · BROOKLYN</p>
-          </div>
+          <!-- Emblem logo -->
+          <svg class="emblem" viewBox="0 0 240 240" role="img" aria-label="D'Fades Factory emblem">
+            <defs>
+              <path id="arcTop" d="M 36 120 A 84 84 0 0 1 204 120" fill="none"/>
+              <path id="arcBot" d="M 46 120 A 74 74 0 0 0 194 120" fill="none"/>
+            </defs>
+            <circle cx="120" cy="120" r="116" fill="#0e0d0b"/>
+            <circle cx="120" cy="120" r="112" fill="none" stroke="#c89a4b" stroke-width="2"/>
+            <circle cx="120" cy="120" r="104" fill="none" stroke="#c89a4b" stroke-width="0.75" opacity="0.6"/>
+            <text class="emblem-arc" fill="#c89a4b">
+              <textPath href="#arcTop" startOffset="50%" text-anchor="middle">D'FADES&#160;&#160;FACTORY</textPath>
+            </text>
+            <text class="emblem-arc emblem-arc-sm" fill="#c89a4b">
+              <textPath href="#arcBot" startOffset="50%" text-anchor="middle">CUT&#160;·&#160;SHAVE&#160;·&#160;FADE</textPath>
+            </text>
+            <path d="M120 152 l4 8 -4 -2 -4 2 z" fill="#c89a4b"/>
+            <g stroke="#c89a4b" stroke-width="4" stroke-linecap="round" fill="none">
+              <path d="M92 148 L146 84"/>
+              <path d="M97 84 L148 144"/>
+            </g>
+            <circle cx="88" cy="154" r="9" fill="none" stroke="#c89a4b" stroke-width="4"/>
+            <circle cx="153" cy="151" r="9" fill="none" stroke="#c89a4b" stroke-width="4"/>
+            <g fill="#c89a4b">
+              <path d="M77 76 l3.2 6.4 7 1 -5 5 1.2 7 -6.4 -3.3 -6.4 3.3 1.2 -7 -5 -5 7 -1 z" transform="scale(0.62) translate(46 40)"/>
+              <path d="M77 76 l3.2 6.4 7 1 -5 5 1.2 7 -6.4 -3.3 -6.4 3.3 1.2 -7 -5 -5 7 -1 z" transform="scale(0.62) translate(190 40)"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
@@ -147,8 +176,8 @@
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">Word in the chair</p>
-        <h2>5.0 stars, and here's why</h2>
-        <p class="section-sub">From Google reviews of the shop.</p>
+        <h2>Five stars, every review</h2>
+        <p class="section-sub muted">From Google reviews of the shop.</p>
       </div>
       <div class="quotes" tabindex="0" aria-label="Customer reviews, scroll horizontally">
         <figure class="quote reveal">
@@ -171,22 +200,39 @@
     </div>
   </section>
 
-  <!-- ======= Gallery / IG ======= -->
+  <!-- ======= Gallery ======= -->
   <section class="section section-warm" id="work">
     <div class="container">
       <div class="section-head reveal">
         <p class="eyebrow">The work</p>
         <h2>Fresh off the chair</h2>
-        <p class="section-sub">Follow <a href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener">@d_fadesfactory</a> for daily cuts.</p>
+        <p class="section-sub muted">Daily cuts on <a href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener">@d_fadesfactory</a>.</p>
       </div>
-      <div class="ig-grid reveal">
-        <a class="ig-tile" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="See cuts on Instagram"><span>SKIN<br>FADE</span></a>
-        <a class="ig-tile" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="See cuts on Instagram"><span>TAPER</span></a>
-        <a class="ig-tile" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="See cuts on Instagram"><span>BEARD<br>SCULPT</span></a>
-        <a class="ig-tile" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="See cuts on Instagram"><span>KIDS</span></a>
-        <a class="ig-tile" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="See cuts on Instagram"><span>STYLO</span></a>
-        <a class="ig-tile ig-more" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener"><span>SEE MORE →</span></a>
+      <div class="gallery reveal">
+        <a class="ph" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="Barber at work — see more on Instagram">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Barber finishing a fade" loading="lazy" onerror="this.closest('.ph').classList.add('noimg')">
+          <span class="ph-fallback">The Fade</span>
+        </a>
+        <a class="ph" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="Clipper work — see more on Instagram">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Clipper work on a taper" loading="lazy" onerror="this.closest('.ph').classList.add('noimg')">
+          <span class="ph-fallback">The Taper</span>
+        </a>
+        <a class="ph" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="Beard work — see more on Instagram">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Beard trim with straight razor" loading="lazy" onerror="this.closest('.ph').classList.add('noimg')">
+          <span class="ph-fallback">The Beard</span>
+        </a>
+        <a class="ph" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener" aria-label="Hot towel shave — see more on Instagram">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Hot towel shave" loading="lazy" onerror="this.closest('.ph').classList.add('noimg')">
+          <span class="ph-fallback">The Shave</span>
+        </a>
+        <a class="ph ph-text" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener">
+          <span>Kids<br>welcome</span>
+        </a>
+        <a class="ph ph-text ph-more" href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener">
+          <span>See more →</span>
+        </a>
       </div>
+      <p class="menu-note reveal muted small">Photos shown are placeholders — the shop's own cuts from Instagram replace them at launch.</p>
     </div>
   </section>
 
@@ -202,21 +248,21 @@
         <div class="book-ways reveal">
           <div class="way">
             <span class="way-num">01</span>
-            <div><h3>Walk in</h3><p>No appointment needed — doors open every day, 8 AM to 8 PM.</p></div>
+            <div><h3>Walk in</h3><p>No appointment needed. Doors open every day, 8 to 8.</p></div>
           </div>
           <div class="way">
             <span class="way-num">02</span>
-            <div><h3>DM the shop</h3><p>Message <a href="https://ig.me/m/d_fadesfactory" target="_blank" rel="noopener">@d_fadesfactory</a> on Instagram with your day and time.</p></div>
+            <div><h3>DM the shop</h3><p>Message <a href="https://ig.me/m/d_fadesfactory" target="_blank" rel="noopener">@d_fadesfactory</a> with your day and time.</p></div>
           </div>
           <div class="way">
             <span class="way-num">03</span>
-            <div><h3>Call ahead</h3><p>Ring the shop and we'll hold you a chair.<br><a href="tel:+10000000000" class="tel-placeholder">(Shop number — tap to call)</a></p></div>
+            <div><h3>Call ahead</h3><p>We'll hold you a chair.<br><a href="tel:+10000000000" class="tel-placeholder">(Shop number — tap to call)</a></p></div>
           </div>
         </div>
 
         <form class="book-form reveal" id="book-form">
           <h3>Request an appointment</h3>
-          <p class="form-hint">Fill this out — we'll open your Instagram message ready to send.</p>
+          <p class="form-hint">We'll open your Instagram message, ready to send.</p>
           <label>Your name
             <input type="text" name="name" required autocomplete="name" placeholder="First name">
           </label>
@@ -232,13 +278,13 @@
           </label>
           <div class="form-row">
             <label>Day
-              <input type="text" name="day" required placeholder="e.g. Saturday">
+              <input type="text" name="day" required placeholder="Saturday">
             </label>
             <label>Time
-              <input type="text" name="time" required placeholder="e.g. 2 PM">
+              <input type="text" name="time" required placeholder="2 PM">
             </label>
           </div>
-          <button type="submit" class="btn btn-led btn-lg">Send via Instagram DM</button>
+          <button type="submit" class="btn btn-gold btn-lg">Send via Instagram</button>
           <p class="form-status" data-form-status aria-live="polite"></p>
         </form>
       </div>
@@ -261,16 +307,15 @@
           </div>
           <div class="info-block reveal">
             <h3>Hours</h3>
-            <p>Every day<br><strong>8:00 AM – 8:00 PM</strong></p>
+            <p>Every day<br><strong>8 AM – 8 PM</strong></p>
           </div>
           <div class="info-block reveal">
             <h3>Getting here</h3>
-            <p>N train to Kings Hwy or Avenue U, a few blocks east.<br><span class="muted">Street parking on Stillwell.</span></p>
+            <p>N train to Kings Hwy or Avenue U.<br><span class="muted">Street parking on Stillwell.</span></p>
           </div>
           <div class="info-block reveal">
             <h3>Follow</h3>
-            <p><a href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener">Instagram @d_fadesfactory</a><br>
-               <a href="https://www.tiktok.com/@d.fades.factory" target="_blank" rel="noopener">TikTok @d.fades.factory</a></p>
+            <p><a href="https://www.instagram.com/d_fadesfactory" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@d.fades.factory" target="_blank" rel="noopener">TikTok</a></p>
           </div>
         </div>
         <div class="visit-map reveal">
@@ -291,7 +336,7 @@
       <p><strong>D'Fades Factory Barbershop</strong> · 2009 Stillwell Ave, Brooklyn, NY 11223 · Every day 8 AM – 8 PM</p>
       <p class="muted">Fades · Tapers · Kids cuts · Beard work · Hot towel shaves · Walk-ins welcome</p>
       <p class="muted small">© <span data-year>2026</span> D' Fades Factory Barber Shop Inc.</p>
-      <p class="muted small demo-note">Demo concept by darstac. Menu prices are calibrated to the neighborhood and shown as placeholders — final prices, phone number and photos to be set by the shop.</p>
+      <p class="muted small demo-note">Demo concept by darstac. Prices are neighborhood-calibrated placeholders; phone number and photography to be set by the shop. Stock photos via Unsplash (free license) until shop photos are added.</p>
     </div>
   </footer>
 
