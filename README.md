@@ -5,13 +5,14 @@ Brooklyn, NY 11223 (Gravesend).
 
 ## Design
 
-Palette taken directly from the shop's interior: charcoal walls, black chairs and cabinetry,
-the **green LED perimeter strip** (carried through the site as a glowing line motif under the
-header and on cards), and the **caramel tile floor** (used for prices, stars and section labels).
-Display type is Anton — big, condensed, barbershop-poster energy; body is Inter.
+Palette taken directly from the shop's own emblem (the Instagram logo): warm black ground,
+**antique gold**, ivory type. The emblem's double-rule ornament ("═ CUT · SHAVE · FADE ═")
+recurs as the section-label motif, the about card is a circular badge echoing the logo's ring,
+and menu prices sit on dotted leaders like a printed shop card. Display type is Marcellus
+(engraved-roman feel); body is Archivo. No neon, no glow effects.
 
-Animations: spinning barber-pole mark (in shop colors), humming LED strip, staggered scroll
-reveals, hover lifts, live open/closed status in NY time. All respect `prefers-reduced-motion`.
+Animations kept quiet: a slow-turning barber-pole mark in emblem colors, short fade-up reveals,
+hover states, live open/closed status in NY time. All respect `prefers-reduced-motion`.
 
 ## Booking
 
